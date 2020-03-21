@@ -17,7 +17,7 @@ This program prints a "Hello World" message that you can view on a [terminal app
 ```cpp
 #include "mbed.h"
 
-Serial pc(USBTX, USBRX); // tx, rx
+UnbufferedSerial pc(USBTX, USBRX); // tx, rx
 
 int main() {
     pc.printf("Hello World!\n");
@@ -76,7 +76,7 @@ If you're not sure how to build these examples and run them on your board, pleas
 ```cpp
 #include "mbed.h"
 
-Serial pc(USBTX, USBRX);
+UnbufferedSerial pc(USBTX, USBRX);
 
 int main() {
     pc.printf("Echoes back to the screen anything you type\n");
@@ -95,7 +95,7 @@ int main() {
 ```cpp
 #include "mbed.h"
 
-Serial pc(USBTX, USBRX); // tx, rx
+UnbufferedSerial pc(USBTX, USBRX); // tx, rx
 PwmOut led(LED1);
 
 float brightness = 0.0;
@@ -124,8 +124,8 @@ Tie pins together to see characters echoed back.
 ```cpp
 #include "mbed.h"
 
-Serial pc(USBTX, USBRX);
-Serial uart(D1, D0);
+UnbufferedSerial pc(USBTX, USBRX);
+UnbufferedSerial uart(D1, D0);
 
 DigitalOut pc_activity(LED1);
 DigitalOut uart_activity(LED2);
@@ -163,7 +163,7 @@ int main() {
 #include "mbed.h"
 
 DigitalOut myled(LED1);
-Serial pc(USBTX, USBRX);
+UnbufferedSerial pc(USBTX, USBRX);
 
 int main() {
     char c;
