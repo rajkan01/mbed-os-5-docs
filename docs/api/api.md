@@ -21,7 +21,7 @@ Most of the Mbed OS APIs are also supported with the Mbed OS bare metal profile.
 <td><a href="thisthread.html">ThisThread</a></td>
 <td><a href="event.html">Event</a></td>
 <td><a href="eventqueue.html">EventQueue</a></td>
-<td><a href="mutex.html">Mutex</a></td>
+<td><a href="mutex.html">Mutex<span>*</span></a></td>
 </tr>
 </tbody>
 </table>
